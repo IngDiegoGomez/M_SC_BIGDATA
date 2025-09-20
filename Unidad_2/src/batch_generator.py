@@ -137,14 +137,14 @@ if __name__ == "__main__":
     logging.info(f"Started batch processing for {date.today()}.")
 
     # Define the output file name with today's date.
-    output_file = f"chapter_2/work_2/data_2/batch_{date.today()}.csv"
+    output_file = f"Unidad_2/work/batch_{date.today()}.csv"
 
     # Define number of records: first run - 10_372; next runs random number.
-    if str(date.today()) == "2024-09-14":
-        records = random.randint(100_372, 100_372)
+    if str(date.today()) == "2025-09-20":
+        records = random.randint(300_372, 300_372)
         run_type = "first"
     else:
-        records = random.randint(0, 1_101)
+        records = random.randint(0, 3_101)
         run_type = "next"
     
     # Generate and write records to the CSV.
