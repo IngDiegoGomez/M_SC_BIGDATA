@@ -1,0 +1,1115 @@
+[0m18:22:31.692332 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff7c42b8c0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff7cd90f80>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff7c4dd100>]}
+
+
+============================== 18:22:31.704143 | 553e1755-6d98-4ebc-9c66-74be34727003 ==============================
+[0m18:22:31.704143 [info ] [MainThread]: Running with dbt=1.8.0
+[0m18:22:31.704627 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/opt/airflow/dbt', 'debug': 'False', 'version_check': 'True', 'log_path': '/opt/airflow/dbt/logs', 'warn_error': 'None', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt run --select tag:staging', 'log_format': 'default', 'introspect': 'True', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m18:22:31.769318 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '553e1755-6d98-4ebc-9c66-74be34727003', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff7b8b2240>]}
+[0m18:22:31.790277 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '553e1755-6d98-4ebc-9c66-74be34727003', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff7b52c410>]}
+[0m18:22:31.790813 [info ] [MainThread]: Registered adapter: postgres=1.8.2
+[0m18:22:31.820445 [debug] [MainThread]: checksum: dbb12d416fdb55e3665e4828703bbedf40c5c90ed7ca6ff39bbbfb29b12b0a92, vars: {}, profile: , target: , version: 1.8.0
+[0m18:22:31.821116 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m18:22:31.821497 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '553e1755-6d98-4ebc-9c66-74be34727003', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff7c713650>]}
+[0m18:22:32.133359 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '553e1755-6d98-4ebc-9c66-74be34727003', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff7b258c80>]}
+[0m18:22:32.166939 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '553e1755-6d98-4ebc-9c66-74be34727003', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff7a70d520>]}
+[0m18:22:32.167230 [info ] [MainThread]: Found 10 sources, 428 macros
+[0m18:22:32.167628 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '553e1755-6d98-4ebc-9c66-74be34727003', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff7b31e7b0>]}
+[0m18:22:32.167908 [warn ] [MainThread]: The selection criterion 'tag:staging' does not match any enabled nodes
+[0m18:22:32.168439 [info ] [MainThread]: 
+[0m18:22:32.168623 [warn ] [MainThread]: Nothing to do. Try checking your model configs and model specification args
+[0m18:22:32.168876 [debug] [MainThread]: Command end result
+[0m18:22:32.183007 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": true, "command_wall_clock_time": 0.53771865, "process_user_time": 1.400716, "process_kernel_time": 0.081099, "process_mem_max_rss": "111456", "process_in_blocks": "4488", "process_out_blocks": "6507"}
+[0m18:22:32.183436 [debug] [MainThread]: Command `dbt run` succeeded at 18:22:32.183376 after 0.54 seconds
+[0m18:22:32.183711 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff7a700920>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff7b345ee0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff7bb1e480>]}
+[0m18:22:32.184069 [debug] [MainThread]: Flushing usage events
+[0m18:22:35.021738 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff8d8e0f50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff8d5a8740>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff8d58bef0>]}
+
+
+============================== 18:22:35.025555 | 90e28ffc-8740-4cce-b0f5-53de48f3eefd ==============================
+[0m18:22:35.025555 [info ] [MainThread]: Running with dbt=1.8.0
+[0m18:22:35.026147 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/opt/airflow/dbt', 'version_check': 'True', 'fail_fast': 'False', 'log_path': '/opt/airflow/dbt/logs', 'debug': 'False', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'invocation_command': 'dbt run --select tag:trusted', 'introspect': 'True', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m18:22:35.104322 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '90e28ffc-8740-4cce-b0f5-53de48f3eefd', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff8e453e00>]}
+[0m18:22:35.148691 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '90e28ffc-8740-4cce-b0f5-53de48f3eefd', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff8d7563c0>]}
+[0m18:22:35.150471 [info ] [MainThread]: Registered adapter: postgres=1.8.2
+[0m18:22:35.237136 [debug] [MainThread]: checksum: dbb12d416fdb55e3665e4828703bbedf40c5c90ed7ca6ff39bbbfb29b12b0a92, vars: {}, profile: , target: , version: 1.8.0
+[0m18:22:35.285317 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m18:22:35.285746 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m18:22:35.293037 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '90e28ffc-8740-4cce-b0f5-53de48f3eefd', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff8c503980>]}
+[0m18:22:35.341907 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '90e28ffc-8740-4cce-b0f5-53de48f3eefd', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff8c38d490>]}
+[0m18:22:35.342253 [info ] [MainThread]: Found 10 sources, 428 macros
+[0m18:22:35.342777 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '90e28ffc-8740-4cce-b0f5-53de48f3eefd', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff8c2b54f0>]}
+[0m18:22:35.343145 [warn ] [MainThread]: The selection criterion 'tag:trusted' does not match any enabled nodes
+[0m18:22:35.343852 [info ] [MainThread]: 
+[0m18:22:35.344071 [warn ] [MainThread]: Nothing to do. Try checking your model configs and model specification args
+[0m18:22:35.345040 [debug] [MainThread]: Command end result
+[0m18:22:35.362707 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": true, "command_wall_clock_time": 0.36239126, "process_user_time": 1.239231, "process_kernel_time": 0.087439, "process_mem_max_rss": "109328", "process_out_blocks": "1637", "process_in_blocks": "0"}
+[0m18:22:35.363120 [debug] [MainThread]: Command `dbt run` succeeded at 18:22:35.363064 after 0.36 seconds
+[0m18:22:35.363379 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff8d5de1b0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff8c35fe00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff90108a40>]}
+[0m18:22:35.363568 [debug] [MainThread]: Flushing usage events
+[0m19:17:58.217759 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff887da5d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff887d90a0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff887da750>]}
+
+
+============================== 19:17:58.221613 | 7c157b85-5aac-40be-9867-03bf67f567a8 ==============================
+[0m19:17:58.221613 [info ] [MainThread]: Running with dbt=1.8.0
+[0m19:17:58.222305 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/opt/airflow/dbt', 'fail_fast': 'False', 'debug': 'False', 'log_path': '/opt/airflow/dbt/logs', 'warn_error': 'None', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'log_format': 'default', 'introspect': 'True', 'target_path': 'None', 'invocation_command': 'dbt run --select tag:driven_staging', 'send_anonymous_usage_stats': 'True'}
+[0m19:17:58.289123 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '7c157b85-5aac-40be-9867-03bf67f567a8', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff883fd5e0>]}
+[0m19:17:58.310295 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '7c157b85-5aac-40be-9867-03bf67f567a8', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff88be63c0>]}
+[0m19:17:58.310799 [info ] [MainThread]: Registered adapter: postgres=1.8.2
+[0m19:17:58.343637 [debug] [MainThread]: checksum: dbb12d416fdb55e3665e4828703bbedf40c5c90ed7ca6ff39bbbfb29b12b0a92, vars: {}, profile: , target: , version: 1.8.0
+[0m19:17:58.376515 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m19:17:58.376800 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m19:17:58.382230 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '7c157b85-5aac-40be-9867-03bf67f567a8', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff8784bb30>]}
+[0m19:17:58.419301 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '7c157b85-5aac-40be-9867-03bf67f567a8', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff879bbfe0>]}
+[0m19:17:58.419608 [info ] [MainThread]: Found 10 sources, 428 macros
+[0m19:17:58.420033 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '7c157b85-5aac-40be-9867-03bf67f567a8', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff879e9c40>]}
+[0m19:17:58.420355 [warn ] [MainThread]: The selection criterion 'tag:driven_staging' does not match any enabled nodes
+[0m19:17:58.420906 [info ] [MainThread]: 
+[0m19:17:58.421162 [warn ] [MainThread]: Nothing to do. Try checking your model configs and model specification args
+[0m19:17:58.421935 [debug] [MainThread]: Command end result
+[0m19:17:58.436535 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": true, "command_wall_clock_time": 0.23895691, "process_user_time": 1.047233, "process_kernel_time": 0.085855, "process_mem_max_rss": "109288", "process_in_blocks": "5912", "process_out_blocks": "1637"}
+[0m19:17:58.437080 [debug] [MainThread]: Command `dbt run` succeeded at 19:17:58.437030 after 0.24 seconds
+[0m19:17:58.437308 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff89fe87d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff8857be60>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff876d3da0>]}
+[0m19:17:58.437784 [debug] [MainThread]: Flushing usage events
+[0m19:18:00.314768 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffffaa9a9040>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffffa8447230>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffffa91280b0>]}
+
+
+============================== 19:18:00.318343 | 9c774e9f-db57-4fc6-aecd-b6a47021abda ==============================
+[0m19:18:00.318343 [info ] [MainThread]: Running with dbt=1.8.0
+[0m19:18:00.319005 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/opt/airflow/dbt', 'debug': 'False', 'warn_error': 'None', 'log_path': '/opt/airflow/dbt/logs', 'fail_fast': 'False', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'invocation_command': 'dbt run --select tag:driven_trusted', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m19:18:00.386893 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '9c774e9f-db57-4fc6-aecd-b6a47021abda', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffffa928fe00>]}
+[0m19:18:00.408356 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '9c774e9f-db57-4fc6-aecd-b6a47021abda', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffffa8d6e1b0>]}
+[0m19:18:00.408969 [info ] [MainThread]: Registered adapter: postgres=1.8.2
+[0m19:18:00.456173 [debug] [MainThread]: checksum: dbb12d416fdb55e3665e4828703bbedf40c5c90ed7ca6ff39bbbfb29b12b0a92, vars: {}, profile: , target: , version: 1.8.0
+[0m19:18:00.503295 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m19:18:00.503702 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m19:18:00.512844 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '9c774e9f-db57-4fc6-aecd-b6a47021abda', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffffa7f02540>]}
+[0m19:18:00.562030 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '9c774e9f-db57-4fc6-aecd-b6a47021abda', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffffa71cd3a0>]}
+[0m19:18:00.562472 [info ] [MainThread]: Found 10 sources, 428 macros
+[0m19:18:00.563120 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '9c774e9f-db57-4fc6-aecd-b6a47021abda', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffffa7450950>]}
+[0m19:18:00.563531 [warn ] [MainThread]: The selection criterion 'tag:driven_trusted' does not match any enabled nodes
+[0m19:18:00.564211 [info ] [MainThread]: 
+[0m19:18:00.564463 [warn ] [MainThread]: Nothing to do. Try checking your model configs and model specification args
+[0m19:18:00.565756 [debug] [MainThread]: Command end result
+[0m19:18:00.646816 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": true, "command_wall_clock_time": 0.35290003, "process_user_time": 1.148291, "process_kernel_time": 0.07491, "process_mem_max_rss": "109188", "process_out_blocks": "1637", "process_in_blocks": "0"}
+[0m19:18:00.647285 [debug] [MainThread]: Command `dbt run` succeeded at 19:18:00.647208 after 0.35 seconds
+[0m19:18:00.647678 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffffa871d6a0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffffa871fcb0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffffa85c3170>]}
+[0m19:18:00.647936 [debug] [MainThread]: Flushing usage events
+[0m19:31:46.326087 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff9dbb6c30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff9dcbfc20>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff9e66bce0>]}
+
+
+============================== 19:31:46.329673 | 45e897e6-1ea8-43a3-aa6b-21019382e253 ==============================
+[0m19:31:46.329673 [info ] [MainThread]: Running with dbt=1.8.0
+[0m19:31:46.330145 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/opt/airflow/dbt', 'fail_fast': 'False', 'warn_error': 'None', 'log_path': '/opt/airflow/dbt/logs', 'version_check': 'True', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'log_format': 'default', 'static_parser': 'True', 'target_path': 'None', 'invocation_command': 'dbt run --select tag:staging', 'send_anonymous_usage_stats': 'True'}
+[0m19:31:46.390814 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '45e897e6-1ea8-43a3-aa6b-21019382e253', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff9e2f3b90>]}
+[0m19:31:46.409708 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '45e897e6-1ea8-43a3-aa6b-21019382e253', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff9ddca270>]}
+[0m19:31:46.410097 [info ] [MainThread]: Registered adapter: postgres=1.8.2
+[0m19:31:46.438338 [debug] [MainThread]: checksum: dbb12d416fdb55e3665e4828703bbedf40c5c90ed7ca6ff39bbbfb29b12b0a92, vars: {}, profile: , target: , version: 1.8.0
+[0m19:31:46.462966 [info ] [MainThread]: Unable to do partial parsing because a project config has changed
+[0m19:31:46.463447 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '45e897e6-1ea8-43a3-aa6b-21019382e253', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff9c16c620>]}
+[0m19:31:46.829704 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '45e897e6-1ea8-43a3-aa6b-21019382e253', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff9c0f2c30>]}
+[0m19:31:46.869849 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '45e897e6-1ea8-43a3-aa6b-21019382e253', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff9c0b82c0>]}
+[0m19:31:46.870168 [info ] [MainThread]: Found 9 models, 10 sources, 428 macros
+[0m19:31:46.870569 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '45e897e6-1ea8-43a3-aa6b-21019382e253', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff9c16f0b0>]}
+[0m19:31:46.871476 [info ] [MainThread]: 
+[0m19:31:46.871836 [debug] [MainThread]: Acquiring new postgres connection 'master'
+[0m19:31:46.873631 [debug] [ThreadPool]: Acquiring new postgres connection 'list_airflow'
+[0m19:31:46.916838 [debug] [ThreadPool]: Using postgres connection "list_airflow"
+[0m19:31:46.917118 [debug] [ThreadPool]: On list_airflow: /* {"app": "dbt", "dbt_version": "1.8.0", "profile_name": "default", "target_name": "dev", "connection_name": "list_airflow"} */
+
+    select distinct nspname from pg_namespace
+  
+[0m19:31:46.917312 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m19:31:46.919474 [debug] [ThreadPool]: SQL status: SELECT 5 in 0.002 seconds
+[0m19:31:46.920112 [debug] [ThreadPool]: On list_airflow: Close
+[0m19:31:46.920496 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_airflow, now create_airflow_driven_staging)
+[0m19:31:46.920717 [debug] [ThreadPool]: Creating schema "database: "airflow"
+schema: "driven_staging"
+"
+[0m19:31:46.923057 [debug] [ThreadPool]: Using postgres connection "create_airflow_driven_staging"
+[0m19:31:46.923310 [debug] [ThreadPool]: On create_airflow_driven_staging: BEGIN
+[0m19:31:46.923495 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m19:31:46.924823 [debug] [ThreadPool]: SQL status: BEGIN in 0.001 seconds
+[0m19:31:46.925049 [debug] [ThreadPool]: Using postgres connection "create_airflow_driven_staging"
+[0m19:31:46.925209 [debug] [ThreadPool]: On create_airflow_driven_staging: /* {"app": "dbt", "dbt_version": "1.8.0", "profile_name": "default", "target_name": "dev", "connection_name": "create_airflow_driven_staging"} */
+create schema if not exists "driven_staging"
+[0m19:31:46.925573 [debug] [ThreadPool]: SQL status: CREATE SCHEMA in 0.000 seconds
+[0m19:31:46.926000 [debug] [ThreadPool]: On create_airflow_driven_staging: COMMIT
+[0m19:31:46.926330 [debug] [ThreadPool]: Using postgres connection "create_airflow_driven_staging"
+[0m19:31:46.926504 [debug] [ThreadPool]: On create_airflow_driven_staging: COMMIT
+[0m19:31:46.926977 [debug] [ThreadPool]: SQL status: COMMIT in 0.000 seconds
+[0m19:31:46.927151 [debug] [ThreadPool]: On create_airflow_driven_staging: Close
+[0m19:31:46.927956 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly create_airflow_driven_staging, now list_airflow_driven_staging)
+[0m19:31:46.930425 [debug] [ThreadPool]: Using postgres connection "list_airflow_driven_staging"
+[0m19:31:46.930585 [debug] [ThreadPool]: On list_airflow_driven_staging: BEGIN
+[0m19:31:46.930717 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m19:31:46.931973 [debug] [ThreadPool]: SQL status: BEGIN in 0.001 seconds
+[0m19:31:46.932183 [debug] [ThreadPool]: Using postgres connection "list_airflow_driven_staging"
+[0m19:31:46.932349 [debug] [ThreadPool]: On list_airflow_driven_staging: /* {"app": "dbt", "dbt_version": "1.8.0", "profile_name": "default", "target_name": "dev", "connection_name": "list_airflow_driven_staging"} */
+select
+      'airflow' as database,
+      tablename as name,
+      schemaname as schema,
+      'table' as type
+    from pg_tables
+    where schemaname ilike 'driven_staging'
+    union all
+    select
+      'airflow' as database,
+      viewname as name,
+      schemaname as schema,
+      'view' as type
+    from pg_views
+    where schemaname ilike 'driven_staging'
+    union all
+    select
+      'airflow' as database,
+      matviewname as name,
+      schemaname as schema,
+      'materialized_view' as type
+    from pg_matviews
+    where schemaname ilike 'driven_staging'
+  
+[0m19:31:46.933719 [debug] [ThreadPool]: SQL status: SELECT 0 in 0.001 seconds
+[0m19:31:46.934333 [debug] [ThreadPool]: On list_airflow_driven_staging: ROLLBACK
+[0m19:31:46.934551 [debug] [ThreadPool]: On list_airflow_driven_staging: Close
+[0m19:31:46.934832 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_airflow_driven_staging, now list_airflow_driven_trusted)
+[0m19:31:46.935842 [debug] [ThreadPool]: Using postgres connection "list_airflow_driven_trusted"
+[0m19:31:46.936019 [debug] [ThreadPool]: On list_airflow_driven_trusted: BEGIN
+[0m19:31:46.936163 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m19:31:46.937488 [debug] [ThreadPool]: SQL status: BEGIN in 0.001 seconds
+[0m19:31:46.937684 [debug] [ThreadPool]: Using postgres connection "list_airflow_driven_trusted"
+[0m19:31:46.937853 [debug] [ThreadPool]: On list_airflow_driven_trusted: /* {"app": "dbt", "dbt_version": "1.8.0", "profile_name": "default", "target_name": "dev", "connection_name": "list_airflow_driven_trusted"} */
+select
+      'airflow' as database,
+      tablename as name,
+      schemaname as schema,
+      'table' as type
+    from pg_tables
+    where schemaname ilike 'driven_trusted'
+    union all
+    select
+      'airflow' as database,
+      viewname as name,
+      schemaname as schema,
+      'view' as type
+    from pg_views
+    where schemaname ilike 'driven_trusted'
+    union all
+    select
+      'airflow' as database,
+      matviewname as name,
+      schemaname as schema,
+      'materialized_view' as type
+    from pg_matviews
+    where schemaname ilike 'driven_trusted'
+  
+[0m19:31:46.938898 [debug] [ThreadPool]: SQL status: SELECT 0 in 0.001 seconds
+[0m19:31:46.939428 [debug] [ThreadPool]: On list_airflow_driven_trusted: ROLLBACK
+[0m19:31:46.939645 [debug] [ThreadPool]: On list_airflow_driven_trusted: Close
+[0m19:31:46.941809 [debug] [MainThread]: Using postgres connection "master"
+[0m19:31:46.941985 [debug] [MainThread]: On master: BEGIN
+[0m19:31:46.942135 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m19:31:46.943396 [debug] [MainThread]: SQL status: BEGIN in 0.001 seconds
+[0m19:31:46.943564 [debug] [MainThread]: Using postgres connection "master"
+[0m19:31:46.943748 [debug] [MainThread]: On master: /* {"app": "dbt", "dbt_version": "1.8.0", "profile_name": "default", "target_name": "dev", "connection_name": "master"} */
+with relation as (
+        select
+            pg_rewrite.ev_class as class,
+            pg_rewrite.oid as id
+        from pg_rewrite
+    ),
+    class as (
+        select
+            oid as id,
+            relname as name,
+            relnamespace as schema,
+            relkind as kind
+        from pg_class
+    ),
+    dependency as (
+        select distinct
+            pg_depend.objid as id,
+            pg_depend.refobjid as ref
+        from pg_depend
+    ),
+    schema as (
+        select
+            pg_namespace.oid as id,
+            pg_namespace.nspname as name
+        from pg_namespace
+        where nspname != 'information_schema' and nspname not like 'pg\_%'
+    ),
+    referenced as (
+        select
+            relation.id AS id,
+            referenced_class.name ,
+            referenced_class.schema ,
+            referenced_class.kind
+        from relation
+        join class as referenced_class on relation.class=referenced_class.id
+        where referenced_class.kind in ('r', 'v', 'm')
+    ),
+    relationships as (
+        select
+            referenced.name as referenced_name,
+            referenced.schema as referenced_schema_id,
+            dependent_class.name as dependent_name,
+            dependent_class.schema as dependent_schema_id,
+            referenced.kind as kind
+        from referenced
+        join dependency on referenced.id=dependency.id
+        join class as dependent_class on dependency.ref=dependent_class.id
+        where
+            (referenced.name != dependent_class.name or
+             referenced.schema != dependent_class.schema)
+    )
+
+    select
+        referenced_schema.name as referenced_schema,
+        relationships.referenced_name as referenced_name,
+        dependent_schema.name as dependent_schema,
+        relationships.dependent_name as dependent_name
+    from relationships
+    join schema as dependent_schema on relationships.dependent_schema_id=dependent_schema.id
+    join schema as referenced_schema on relationships.referenced_schema_id=referenced_schema.id
+    group by referenced_schema, referenced_name, dependent_schema, dependent_name
+    order by referenced_schema, referenced_name, dependent_schema, dependent_name;
+[0m19:31:46.945110 [debug] [MainThread]: SQL status: SELECT 0 in 0.001 seconds
+[0m19:31:46.945667 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '45e897e6-1ea8-43a3-aa6b-21019382e253', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff9c16f0b0>]}
+[0m19:31:46.945897 [debug] [MainThread]: On master: ROLLBACK
+[0m19:31:46.946117 [debug] [MainThread]: Using postgres connection "master"
+[0m19:31:46.946279 [debug] [MainThread]: On master: BEGIN
+[0m19:31:46.946552 [debug] [MainThread]: SQL status: BEGIN in 0.000 seconds
+[0m19:31:46.946731 [debug] [MainThread]: On master: COMMIT
+[0m19:31:46.946914 [debug] [MainThread]: Using postgres connection "master"
+[0m19:31:46.947098 [debug] [MainThread]: On master: COMMIT
+[0m19:31:46.947319 [debug] [MainThread]: SQL status: COMMIT in 0.000 seconds
+[0m19:31:46.947487 [debug] [MainThread]: On master: Close
+[0m19:31:46.947707 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m19:31:46.948070 [info ] [MainThread]: 
+[0m19:31:46.952322 [debug] [Thread-1 (]: Began running node model.dbt_driven_data.staging_dim_address
+[0m19:31:46.952585 [info ] [Thread-1 (]: 1 of 5 START sql table model driven_staging.dim_address ........................ [RUN]
+[0m19:31:46.952877 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_airflow_driven_trusted, now model.dbt_driven_data.staging_dim_address)
+[0m19:31:46.953054 [debug] [Thread-1 (]: Began compiling node model.dbt_driven_data.staging_dim_address
+[0m19:31:46.956404 [debug] [Thread-1 (]: Writing injected SQL for node "model.dbt_driven_data.staging_dim_address"
+[0m19:31:46.957533 [debug] [Thread-1 (]: Began executing node model.dbt_driven_data.staging_dim_address
+[0m19:31:46.973470 [debug] [Thread-1 (]: Writing runtime sql for node "model.dbt_driven_data.staging_dim_address"
+[0m19:31:46.974654 [debug] [Thread-1 (]: Using postgres connection "model.dbt_driven_data.staging_dim_address"
+[0m19:31:46.974843 [debug] [Thread-1 (]: On model.dbt_driven_data.staging_dim_address: BEGIN
+[0m19:31:46.975027 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m19:31:46.976671 [debug] [Thread-1 (]: SQL status: BEGIN in 0.002 seconds
+[0m19:31:46.976852 [debug] [Thread-1 (]: Using postgres connection "model.dbt_driven_data.staging_dim_address"
+[0m19:31:46.977014 [debug] [Thread-1 (]: On model.dbt_driven_data.staging_dim_address: /* {"app": "dbt", "dbt_version": "1.8.0", "profile_name": "default", "target_name": "dev", "node_id": "model.dbt_driven_data.staging_dim_address"} */
+
+  
+    
+
+  create  table "airflow"."driven_staging"."dim_address__dbt_tmp"
+  
+  
+    as
+  
+  (
+    
+
+WITH source_data AS (
+    SELECT
+        unique_id,
+        address,
+        mac_address,
+        ip_address
+    FROM
+        "airflow"."driven_raw"."raw_batch_data"
+)
+
+SELECT
+    *
+FROM
+    source_data
+  );
+  
+[0m19:31:47.417201 [debug] [Thread-1 (]: SQL status: SELECT 601718 in 0.440 seconds
+[0m19:31:47.420538 [debug] [Thread-1 (]: Using postgres connection "model.dbt_driven_data.staging_dim_address"
+[0m19:31:47.420779 [debug] [Thread-1 (]: On model.dbt_driven_data.staging_dim_address: /* {"app": "dbt", "dbt_version": "1.8.0", "profile_name": "default", "target_name": "dev", "node_id": "model.dbt_driven_data.staging_dim_address"} */
+alter table "airflow"."driven_staging"."dim_address__dbt_tmp" rename to "dim_address"
+[0m19:31:47.421267 [debug] [Thread-1 (]: SQL status: ALTER TABLE in 0.000 seconds
+[0m19:31:47.428494 [debug] [Thread-1 (]: On model.dbt_driven_data.staging_dim_address: COMMIT
+[0m19:31:47.428724 [debug] [Thread-1 (]: Using postgres connection "model.dbt_driven_data.staging_dim_address"
+[0m19:31:47.428925 [debug] [Thread-1 (]: On model.dbt_driven_data.staging_dim_address: COMMIT
+[0m19:31:47.435449 [debug] [Thread-1 (]: SQL status: COMMIT in 0.006 seconds
+[0m19:31:47.438914 [debug] [Thread-1 (]: Applying DROP to: "airflow"."driven_staging"."dim_address__dbt_backup"
+[0m19:31:47.441114 [debug] [Thread-1 (]: Using postgres connection "model.dbt_driven_data.staging_dim_address"
+[0m19:31:47.441328 [debug] [Thread-1 (]: On model.dbt_driven_data.staging_dim_address: /* {"app": "dbt", "dbt_version": "1.8.0", "profile_name": "default", "target_name": "dev", "node_id": "model.dbt_driven_data.staging_dim_address"} */
+drop table if exists "airflow"."driven_staging"."dim_address__dbt_backup" cascade
+[0m19:31:47.441613 [debug] [Thread-1 (]: SQL status: DROP TABLE in 0.000 seconds
+[0m19:31:47.442841 [debug] [Thread-1 (]: On model.dbt_driven_data.staging_dim_address: Close
+[0m19:31:47.443585 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '45e897e6-1ea8-43a3-aa6b-21019382e253', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff9eb2ea80>]}
+[0m19:31:47.444007 [info ] [Thread-1 (]: 1 of 5 OK created sql table model driven_staging.dim_address ................... [[32mSELECT 601718[0m in 0.49s]
+[0m19:31:47.444455 [debug] [Thread-1 (]: Finished running node model.dbt_driven_data.staging_dim_address
+[0m19:31:47.444749 [debug] [Thread-1 (]: Began running node model.dbt_driven_data.staging_dim_date
+[0m19:31:47.445027 [info ] [Thread-1 (]: 2 of 5 START sql table model driven_staging.dim_date ........................... [RUN]
+[0m19:31:47.445349 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.dbt_driven_data.staging_dim_address, now model.dbt_driven_data.staging_dim_date)
+[0m19:31:47.445522 [debug] [Thread-1 (]: Began compiling node model.dbt_driven_data.staging_dim_date
+[0m19:31:47.446969 [debug] [Thread-1 (]: Writing injected SQL for node "model.dbt_driven_data.staging_dim_date"
+[0m19:31:47.447707 [debug] [Thread-1 (]: Began executing node model.dbt_driven_data.staging_dim_date
+[0m19:31:47.449115 [debug] [Thread-1 (]: Writing runtime sql for node "model.dbt_driven_data.staging_dim_date"
+[0m19:31:47.449800 [debug] [Thread-1 (]: Using postgres connection "model.dbt_driven_data.staging_dim_date"
+[0m19:31:47.449994 [debug] [Thread-1 (]: On model.dbt_driven_data.staging_dim_date: BEGIN
+[0m19:31:47.450184 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m19:31:47.451921 [debug] [Thread-1 (]: SQL status: BEGIN in 0.002 seconds
+[0m19:31:47.452143 [debug] [Thread-1 (]: Using postgres connection "model.dbt_driven_data.staging_dim_date"
+[0m19:31:47.452349 [debug] [Thread-1 (]: On model.dbt_driven_data.staging_dim_date: /* {"app": "dbt", "dbt_version": "1.8.0", "profile_name": "default", "target_name": "dev", "node_id": "model.dbt_driven_data.staging_dim_date"} */
+
+  
+    
+
+  create  table "airflow"."driven_staging"."dim_date__dbt_tmp"
+  
+  
+    as
+  
+  (
+    
+
+WITH source_data AS (
+    SELECT
+        unique_id,
+        accessed_at
+    FROM
+        "airflow"."driven_raw"."raw_batch_data"
+)
+
+SELECT
+    *
+FROM
+    source_data
+  );
+  
+[0m19:31:47.783722 [debug] [Thread-1 (]: SQL status: SELECT 601718 in 0.331 seconds
+[0m19:31:47.785369 [debug] [Thread-1 (]: Using postgres connection "model.dbt_driven_data.staging_dim_date"
+[0m19:31:47.785583 [debug] [Thread-1 (]: On model.dbt_driven_data.staging_dim_date: /* {"app": "dbt", "dbt_version": "1.8.0", "profile_name": "default", "target_name": "dev", "node_id": "model.dbt_driven_data.staging_dim_date"} */
+alter table "airflow"."driven_staging"."dim_date__dbt_tmp" rename to "dim_date"
+[0m19:31:47.785967 [debug] [Thread-1 (]: SQL status: ALTER TABLE in 0.000 seconds
+[0m19:31:47.786692 [debug] [Thread-1 (]: On model.dbt_driven_data.staging_dim_date: COMMIT
+[0m19:31:47.786882 [debug] [Thread-1 (]: Using postgres connection "model.dbt_driven_data.staging_dim_date"
+[0m19:31:47.787060 [debug] [Thread-1 (]: On model.dbt_driven_data.staging_dim_date: COMMIT
+[0m19:31:47.792459 [debug] [Thread-1 (]: SQL status: COMMIT in 0.005 seconds
+[0m19:31:47.793638 [debug] [Thread-1 (]: Applying DROP to: "airflow"."driven_staging"."dim_date__dbt_backup"
+[0m19:31:47.794025 [debug] [Thread-1 (]: Using postgres connection "model.dbt_driven_data.staging_dim_date"
+[0m19:31:47.794208 [debug] [Thread-1 (]: On model.dbt_driven_data.staging_dim_date: /* {"app": "dbt", "dbt_version": "1.8.0", "profile_name": "default", "target_name": "dev", "node_id": "model.dbt_driven_data.staging_dim_date"} */
+drop table if exists "airflow"."driven_staging"."dim_date__dbt_backup" cascade
+[0m19:31:47.794492 [debug] [Thread-1 (]: SQL status: DROP TABLE in 0.000 seconds
+[0m19:31:47.795115 [debug] [Thread-1 (]: On model.dbt_driven_data.staging_dim_date: Close
+[0m19:31:47.795454 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '45e897e6-1ea8-43a3-aa6b-21019382e253', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff9ad5a300>]}
+[0m19:31:47.795922 [info ] [Thread-1 (]: 2 of 5 OK created sql table model driven_staging.dim_date ...................... [[32mSELECT 601718[0m in 0.35s]
+[0m19:31:47.796658 [debug] [Thread-1 (]: Finished running node model.dbt_driven_data.staging_dim_date
+[0m19:31:47.796896 [debug] [Thread-1 (]: Began running node model.dbt_driven_data.staging_dim_finance
+[0m19:31:47.797227 [info ] [Thread-1 (]: 3 of 5 START sql table model driven_staging.dim_finance ........................ [RUN]
+[0m19:31:47.797657 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.dbt_driven_data.staging_dim_date, now model.dbt_driven_data.staging_dim_finance)
+[0m19:31:47.797842 [debug] [Thread-1 (]: Began compiling node model.dbt_driven_data.staging_dim_finance
+[0m19:31:47.799312 [debug] [Thread-1 (]: Writing injected SQL for node "model.dbt_driven_data.staging_dim_finance"
+[0m19:31:47.799917 [debug] [Thread-1 (]: Began executing node model.dbt_driven_data.staging_dim_finance
+[0m19:31:47.801346 [debug] [Thread-1 (]: Writing runtime sql for node "model.dbt_driven_data.staging_dim_finance"
+[0m19:31:47.801879 [debug] [Thread-1 (]: Using postgres connection "model.dbt_driven_data.staging_dim_finance"
+[0m19:31:47.802059 [debug] [Thread-1 (]: On model.dbt_driven_data.staging_dim_finance: BEGIN
+[0m19:31:47.802221 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m19:31:47.804253 [debug] [Thread-1 (]: SQL status: BEGIN in 0.002 seconds
+[0m19:31:47.804486 [debug] [Thread-1 (]: Using postgres connection "model.dbt_driven_data.staging_dim_finance"
+[0m19:31:47.804665 [debug] [Thread-1 (]: On model.dbt_driven_data.staging_dim_finance: /* {"app": "dbt", "dbt_version": "1.8.0", "profile_name": "default", "target_name": "dev", "node_id": "model.dbt_driven_data.staging_dim_finance"} */
+
+  
+    
+
+  create  table "airflow"."driven_staging"."dim_finance__dbt_tmp"
+  
+  
+    as
+  
+  (
+    
+
+WITH source_data AS (
+    SELECT
+        unique_id,
+        iban
+    FROM
+        "airflow"."driven_raw"."raw_batch_data"
+)
+
+SELECT
+    *
+FROM
+    source_data
+  );
+  
+[0m19:31:48.177211 [debug] [Thread-1 (]: SQL status: SELECT 601718 in 0.372 seconds
+[0m19:31:48.179622 [debug] [Thread-1 (]: Using postgres connection "model.dbt_driven_data.staging_dim_finance"
+[0m19:31:48.179913 [debug] [Thread-1 (]: On model.dbt_driven_data.staging_dim_finance: /* {"app": "dbt", "dbt_version": "1.8.0", "profile_name": "default", "target_name": "dev", "node_id": "model.dbt_driven_data.staging_dim_finance"} */
+alter table "airflow"."driven_staging"."dim_finance__dbt_tmp" rename to "dim_finance"
+[0m19:31:48.180391 [debug] [Thread-1 (]: SQL status: ALTER TABLE in 0.000 seconds
+[0m19:31:48.181150 [debug] [Thread-1 (]: On model.dbt_driven_data.staging_dim_finance: COMMIT
+[0m19:31:48.181340 [debug] [Thread-1 (]: Using postgres connection "model.dbt_driven_data.staging_dim_finance"
+[0m19:31:48.181493 [debug] [Thread-1 (]: On model.dbt_driven_data.staging_dim_finance: COMMIT
+[0m19:31:48.182362 [debug] [Thread-1 (]: SQL status: COMMIT in 0.001 seconds
+[0m19:31:48.184283 [debug] [Thread-1 (]: Applying DROP to: "airflow"."driven_staging"."dim_finance__dbt_backup"
+[0m19:31:48.184653 [debug] [Thread-1 (]: Using postgres connection "model.dbt_driven_data.staging_dim_finance"
+[0m19:31:48.184839 [debug] [Thread-1 (]: On model.dbt_driven_data.staging_dim_finance: /* {"app": "dbt", "dbt_version": "1.8.0", "profile_name": "default", "target_name": "dev", "node_id": "model.dbt_driven_data.staging_dim_finance"} */
+drop table if exists "airflow"."driven_staging"."dim_finance__dbt_backup" cascade
+[0m19:31:48.185141 [debug] [Thread-1 (]: SQL status: DROP TABLE in 0.000 seconds
+[0m19:31:48.185849 [debug] [Thread-1 (]: On model.dbt_driven_data.staging_dim_finance: Close
+[0m19:31:48.186230 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '45e897e6-1ea8-43a3-aa6b-21019382e253', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff9ad246e0>]}
+[0m19:31:48.186621 [info ] [Thread-1 (]: 3 of 5 OK created sql table model driven_staging.dim_finance ................... [[32mSELECT 601718[0m in 0.39s]
+[0m19:31:48.187446 [debug] [Thread-1 (]: Finished running node model.dbt_driven_data.staging_dim_finance
+[0m19:31:48.187712 [debug] [Thread-1 (]: Began running node model.dbt_driven_data.staging_dim_person
+[0m19:31:48.187971 [info ] [Thread-1 (]: 4 of 5 START sql table model driven_staging.dim_person ......................... [RUN]
+[0m19:31:48.188384 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.dbt_driven_data.staging_dim_finance, now model.dbt_driven_data.staging_dim_person)
+[0m19:31:48.188574 [debug] [Thread-1 (]: Began compiling node model.dbt_driven_data.staging_dim_person
+[0m19:31:48.190197 [debug] [Thread-1 (]: Writing injected SQL for node "model.dbt_driven_data.staging_dim_person"
+[0m19:31:48.190941 [debug] [Thread-1 (]: Began executing node model.dbt_driven_data.staging_dim_person
+[0m19:31:48.192561 [debug] [Thread-1 (]: Writing runtime sql for node "model.dbt_driven_data.staging_dim_person"
+[0m19:31:48.193440 [debug] [Thread-1 (]: Using postgres connection "model.dbt_driven_data.staging_dim_person"
+[0m19:31:48.193666 [debug] [Thread-1 (]: On model.dbt_driven_data.staging_dim_person: BEGIN
+[0m19:31:48.193864 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m19:31:48.195703 [debug] [Thread-1 (]: SQL status: BEGIN in 0.002 seconds
+[0m19:31:48.196004 [debug] [Thread-1 (]: Using postgres connection "model.dbt_driven_data.staging_dim_person"
+[0m19:31:48.196446 [debug] [Thread-1 (]: On model.dbt_driven_data.staging_dim_person: /* {"app": "dbt", "dbt_version": "1.8.0", "profile_name": "default", "target_name": "dev", "node_id": "model.dbt_driven_data.staging_dim_person"} */
+
+  
+    
+
+  create  table "airflow"."driven_staging"."dim_person__dbt_tmp"
+  
+  
+    as
+  
+  (
+    
+
+WITH source_data AS (
+    SELECT
+        unique_id,
+        person_name,
+        user_name,
+        email,
+        phone,
+        birth_date,
+        personal_number
+    FROM
+        "airflow"."driven_raw"."raw_batch_data"
+)
+
+SELECT
+    *
+FROM
+    source_data
+  );
+  
+[0m19:31:48.793020 [debug] [Thread-1 (]: SQL status: SELECT 601718 in 0.596 seconds
+[0m19:31:48.794905 [debug] [Thread-1 (]: Using postgres connection "model.dbt_driven_data.staging_dim_person"
+[0m19:31:48.795113 [debug] [Thread-1 (]: On model.dbt_driven_data.staging_dim_person: /* {"app": "dbt", "dbt_version": "1.8.0", "profile_name": "default", "target_name": "dev", "node_id": "model.dbt_driven_data.staging_dim_person"} */
+alter table "airflow"."driven_staging"."dim_person__dbt_tmp" rename to "dim_person"
+[0m19:31:48.795473 [debug] [Thread-1 (]: SQL status: ALTER TABLE in 0.000 seconds
+[0m19:31:48.796364 [debug] [Thread-1 (]: On model.dbt_driven_data.staging_dim_person: COMMIT
+[0m19:31:48.796607 [debug] [Thread-1 (]: Using postgres connection "model.dbt_driven_data.staging_dim_person"
+[0m19:31:48.796829 [debug] [Thread-1 (]: On model.dbt_driven_data.staging_dim_person: COMMIT
+[0m19:31:48.800509 [debug] [Thread-1 (]: SQL status: COMMIT in 0.003 seconds
+[0m19:31:48.801891 [debug] [Thread-1 (]: Applying DROP to: "airflow"."driven_staging"."dim_person__dbt_backup"
+[0m19:31:48.802319 [debug] [Thread-1 (]: Using postgres connection "model.dbt_driven_data.staging_dim_person"
+[0m19:31:48.802499 [debug] [Thread-1 (]: On model.dbt_driven_data.staging_dim_person: /* {"app": "dbt", "dbt_version": "1.8.0", "profile_name": "default", "target_name": "dev", "node_id": "model.dbt_driven_data.staging_dim_person"} */
+drop table if exists "airflow"."driven_staging"."dim_person__dbt_backup" cascade
+[0m19:31:48.802799 [debug] [Thread-1 (]: SQL status: DROP TABLE in 0.000 seconds
+[0m19:31:48.803487 [debug] [Thread-1 (]: On model.dbt_driven_data.staging_dim_person: Close
+[0m19:31:48.803865 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '45e897e6-1ea8-43a3-aa6b-21019382e253', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff9ad62180>]}
+[0m19:31:48.804275 [info ] [Thread-1 (]: 4 of 5 OK created sql table model driven_staging.dim_person .................... [[32mSELECT 601718[0m in 0.62s]
+[0m19:31:48.805036 [debug] [Thread-1 (]: Finished running node model.dbt_driven_data.staging_dim_person
+[0m19:31:48.805288 [debug] [Thread-1 (]: Began running node model.dbt_driven_data.staging_fact_network_usage
+[0m19:31:48.805553 [info ] [Thread-1 (]: 5 of 5 START sql table model driven_staging.fact_network_usage ................. [RUN]
+[0m19:31:48.805939 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.dbt_driven_data.staging_dim_person, now model.dbt_driven_data.staging_fact_network_usage)
+[0m19:31:48.806154 [debug] [Thread-1 (]: Began compiling node model.dbt_driven_data.staging_fact_network_usage
+[0m19:31:48.807601 [debug] [Thread-1 (]: Writing injected SQL for node "model.dbt_driven_data.staging_fact_network_usage"
+[0m19:31:48.808288 [debug] [Thread-1 (]: Began executing node model.dbt_driven_data.staging_fact_network_usage
+[0m19:31:48.809785 [debug] [Thread-1 (]: Writing runtime sql for node "model.dbt_driven_data.staging_fact_network_usage"
+[0m19:31:48.810372 [debug] [Thread-1 (]: Using postgres connection "model.dbt_driven_data.staging_fact_network_usage"
+[0m19:31:48.810549 [debug] [Thread-1 (]: On model.dbt_driven_data.staging_fact_network_usage: BEGIN
+[0m19:31:48.810713 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m19:31:48.814396 [debug] [Thread-1 (]: SQL status: BEGIN in 0.004 seconds
+[0m19:31:48.814703 [debug] [Thread-1 (]: Using postgres connection "model.dbt_driven_data.staging_fact_network_usage"
+[0m19:31:48.814886 [debug] [Thread-1 (]: On model.dbt_driven_data.staging_fact_network_usage: /* {"app": "dbt", "dbt_version": "1.8.0", "profile_name": "default", "target_name": "dev", "node_id": "model.dbt_driven_data.staging_fact_network_usage"} */
+
+  
+    
+
+  create  table "airflow"."driven_staging"."fact_network_usage__dbt_tmp"
+  
+  
+    as
+  
+  (
+    
+
+WITH source_data AS (
+    SELECT
+        unique_id,
+        session_duration,
+        download_speed,
+        upload_speed,
+        consumed_traffic
+    FROM
+        "airflow"."driven_raw"."raw_batch_data"
+)
+
+SELECT
+    *
+FROM
+    source_data
+  );
+  
+[0m19:31:49.322043 [debug] [Thread-1 (]: SQL status: SELECT 601718 in 0.507 seconds
+[0m19:31:49.327716 [debug] [Thread-1 (]: Using postgres connection "model.dbt_driven_data.staging_fact_network_usage"
+[0m19:31:49.328321 [debug] [Thread-1 (]: On model.dbt_driven_data.staging_fact_network_usage: /* {"app": "dbt", "dbt_version": "1.8.0", "profile_name": "default", "target_name": "dev", "node_id": "model.dbt_driven_data.staging_fact_network_usage"} */
+alter table "airflow"."driven_staging"."fact_network_usage__dbt_tmp" rename to "fact_network_usage"
+[0m19:31:49.329104 [debug] [Thread-1 (]: SQL status: ALTER TABLE in 0.000 seconds
+[0m19:31:49.330167 [debug] [Thread-1 (]: On model.dbt_driven_data.staging_fact_network_usage: COMMIT
+[0m19:31:49.330511 [debug] [Thread-1 (]: Using postgres connection "model.dbt_driven_data.staging_fact_network_usage"
+[0m19:31:49.330993 [debug] [Thread-1 (]: On model.dbt_driven_data.staging_fact_network_usage: COMMIT
+[0m19:31:49.336346 [debug] [Thread-1 (]: SQL status: COMMIT in 0.005 seconds
+[0m19:31:49.340266 [debug] [Thread-1 (]: Applying DROP to: "airflow"."driven_staging"."fact_network_usage__dbt_backup"
+[0m19:31:49.340814 [debug] [Thread-1 (]: Using postgres connection "model.dbt_driven_data.staging_fact_network_usage"
+[0m19:31:49.341524 [debug] [Thread-1 (]: On model.dbt_driven_data.staging_fact_network_usage: /* {"app": "dbt", "dbt_version": "1.8.0", "profile_name": "default", "target_name": "dev", "node_id": "model.dbt_driven_data.staging_fact_network_usage"} */
+drop table if exists "airflow"."driven_staging"."fact_network_usage__dbt_backup" cascade
+[0m19:31:49.343360 [debug] [Thread-1 (]: SQL status: DROP TABLE in 0.001 seconds
+[0m19:31:49.344492 [debug] [Thread-1 (]: On model.dbt_driven_data.staging_fact_network_usage: Close
+[0m19:31:49.345407 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '45e897e6-1ea8-43a3-aa6b-21019382e253', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff9c204050>]}
+[0m19:31:49.346818 [info ] [Thread-1 (]: 5 of 5 OK created sql table model driven_staging.fact_network_usage ............ [[32mSELECT 601718[0m in 0.54s]
+[0m19:31:49.347960 [debug] [Thread-1 (]: Finished running node model.dbt_driven_data.staging_fact_network_usage
+[0m19:31:49.349335 [debug] [MainThread]: Using postgres connection "master"
+[0m19:31:49.349580 [debug] [MainThread]: On master: BEGIN
+[0m19:31:49.349754 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m19:31:49.351985 [debug] [MainThread]: SQL status: BEGIN in 0.002 seconds
+[0m19:31:49.352514 [debug] [MainThread]: On master: COMMIT
+[0m19:31:49.352738 [debug] [MainThread]: Using postgres connection "master"
+[0m19:31:49.352985 [debug] [MainThread]: On master: COMMIT
+[0m19:31:49.353411 [debug] [MainThread]: SQL status: COMMIT in 0.000 seconds
+[0m19:31:49.354085 [debug] [MainThread]: On master: Close
+[0m19:31:49.356534 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m19:31:49.358188 [debug] [MainThread]: Connection 'model.dbt_driven_data.staging_fact_network_usage' was properly closed.
+[0m19:31:49.359132 [info ] [MainThread]: 
+[0m19:31:49.360000 [info ] [MainThread]: Finished running 5 table models in 0 hours 0 minutes and 2.49 seconds (2.49s).
+[0m19:31:49.360848 [debug] [MainThread]: Command end result
+[0m19:31:49.383505 [info ] [MainThread]: 
+[0m19:31:49.384295 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m19:31:49.384912 [info ] [MainThread]: 
+[0m19:31:49.385449 [info ] [MainThread]: Done. PASS=5 WARN=0 ERROR=0 SKIP=0 TOTAL=5
+[0m19:31:49.386532 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": true, "command_wall_clock_time": 3.0788517, "process_user_time": 1.527767, "process_kernel_time": 0.072463, "process_mem_max_rss": "121236", "process_in_blocks": "1944", "process_out_blocks": "2699"}
+[0m19:31:49.386902 [debug] [MainThread]: Command `dbt run` succeeded at 19:31:49.386847 after 3.08 seconds
+[0m19:31:49.387142 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff9dcbfc20>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff9e848620>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff9bd10260>]}
+[0m19:31:49.387368 [debug] [MainThread]: Flushing usage events
+[0m19:31:52.112282 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffffab958fb0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffffab177e90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffffabe4ccb0>]}
+
+
+============================== 19:31:52.115523 | aed8db41-1d52-4a80-b9fa-90181d8984f8 ==============================
+[0m19:31:52.115523 [info ] [MainThread]: Running with dbt=1.8.0
+[0m19:31:52.116059 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/opt/airflow/dbt', 'version_check': 'True', 'fail_fast': 'False', 'log_path': '/opt/airflow/dbt/logs', 'warn_error': 'None', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'invocation_command': 'dbt run --select tag:trusted', 'introspect': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m19:31:52.182256 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'aed8db41-1d52-4a80-b9fa-90181d8984f8', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffffabf68500>]}
+[0m19:31:52.201305 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'aed8db41-1d52-4a80-b9fa-90181d8984f8', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffffac15bbf0>]}
+[0m19:31:52.201702 [info ] [MainThread]: Registered adapter: postgres=1.8.2
+[0m19:31:52.230840 [debug] [MainThread]: checksum: dbb12d416fdb55e3665e4828703bbedf40c5c90ed7ca6ff39bbbfb29b12b0a92, vars: {}, profile: , target: , version: 1.8.0
+[0m19:31:52.273590 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m19:31:52.273878 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m19:31:52.286556 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'aed8db41-1d52-4a80-b9fa-90181d8984f8', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffffaadc7d70>]}
+[0m19:31:52.326805 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'aed8db41-1d52-4a80-b9fa-90181d8984f8', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffffa9eb0230>]}
+[0m19:31:52.327087 [info ] [MainThread]: Found 9 models, 10 sources, 428 macros
+[0m19:31:52.327452 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'aed8db41-1d52-4a80-b9fa-90181d8984f8', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffffa9ea7fe0>]}
+[0m19:31:52.328260 [info ] [MainThread]: 
+[0m19:31:52.328588 [debug] [MainThread]: Acquiring new postgres connection 'master'
+[0m19:31:52.330404 [debug] [ThreadPool]: Acquiring new postgres connection 'list_airflow'
+[0m19:31:52.347047 [debug] [ThreadPool]: Using postgres connection "list_airflow"
+[0m19:31:52.347332 [debug] [ThreadPool]: On list_airflow: /* {"app": "dbt", "dbt_version": "1.8.0", "profile_name": "default", "target_name": "dev", "connection_name": "list_airflow"} */
+
+    select distinct nspname from pg_namespace
+  
+[0m19:31:52.347528 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m19:31:52.349866 [debug] [ThreadPool]: SQL status: SELECT 6 in 0.002 seconds
+[0m19:31:52.350501 [debug] [ThreadPool]: On list_airflow: Close
+[0m19:31:52.350896 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_airflow, now create_airflow_driven_trusted)
+[0m19:31:52.351189 [debug] [ThreadPool]: Creating schema "database: "airflow"
+schema: "driven_trusted"
+"
+[0m19:31:52.353568 [debug] [ThreadPool]: Using postgres connection "create_airflow_driven_trusted"
+[0m19:31:52.353779 [debug] [ThreadPool]: On create_airflow_driven_trusted: BEGIN
+[0m19:31:52.353987 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m19:31:52.355340 [debug] [ThreadPool]: SQL status: BEGIN in 0.001 seconds
+[0m19:31:52.355527 [debug] [ThreadPool]: Using postgres connection "create_airflow_driven_trusted"
+[0m19:31:52.355753 [debug] [ThreadPool]: On create_airflow_driven_trusted: /* {"app": "dbt", "dbt_version": "1.8.0", "profile_name": "default", "target_name": "dev", "connection_name": "create_airflow_driven_trusted"} */
+create schema if not exists "driven_trusted"
+[0m19:31:52.356093 [debug] [ThreadPool]: SQL status: CREATE SCHEMA in 0.000 seconds
+[0m19:31:52.356538 [debug] [ThreadPool]: On create_airflow_driven_trusted: COMMIT
+[0m19:31:52.356718 [debug] [ThreadPool]: Using postgres connection "create_airflow_driven_trusted"
+[0m19:31:52.356906 [debug] [ThreadPool]: On create_airflow_driven_trusted: COMMIT
+[0m19:31:52.357319 [debug] [ThreadPool]: SQL status: COMMIT in 0.000 seconds
+[0m19:31:52.357491 [debug] [ThreadPool]: On create_airflow_driven_trusted: Close
+[0m19:31:52.358323 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly create_airflow_driven_trusted, now list_airflow_driven_staging)
+[0m19:31:52.360724 [debug] [ThreadPool]: Using postgres connection "list_airflow_driven_staging"
+[0m19:31:52.360885 [debug] [ThreadPool]: On list_airflow_driven_staging: BEGIN
+[0m19:31:52.361033 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m19:31:52.362266 [debug] [ThreadPool]: SQL status: BEGIN in 0.001 seconds
+[0m19:31:52.362456 [debug] [ThreadPool]: Using postgres connection "list_airflow_driven_staging"
+[0m19:31:52.362613 [debug] [ThreadPool]: On list_airflow_driven_staging: /* {"app": "dbt", "dbt_version": "1.8.0", "profile_name": "default", "target_name": "dev", "connection_name": "list_airflow_driven_staging"} */
+select
+      'airflow' as database,
+      tablename as name,
+      schemaname as schema,
+      'table' as type
+    from pg_tables
+    where schemaname ilike 'driven_staging'
+    union all
+    select
+      'airflow' as database,
+      viewname as name,
+      schemaname as schema,
+      'view' as type
+    from pg_views
+    where schemaname ilike 'driven_staging'
+    union all
+    select
+      'airflow' as database,
+      matviewname as name,
+      schemaname as schema,
+      'materialized_view' as type
+    from pg_matviews
+    where schemaname ilike 'driven_staging'
+  
+[0m19:31:52.363793 [debug] [ThreadPool]: SQL status: SELECT 5 in 0.001 seconds
+[0m19:31:52.364421 [debug] [ThreadPool]: On list_airflow_driven_staging: ROLLBACK
+[0m19:31:52.364618 [debug] [ThreadPool]: On list_airflow_driven_staging: Close
+[0m19:31:52.364854 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_airflow_driven_staging, now list_airflow_driven_trusted)
+[0m19:31:52.365964 [debug] [ThreadPool]: Using postgres connection "list_airflow_driven_trusted"
+[0m19:31:52.366121 [debug] [ThreadPool]: On list_airflow_driven_trusted: BEGIN
+[0m19:31:52.366271 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m19:31:52.367435 [debug] [ThreadPool]: SQL status: BEGIN in 0.001 seconds
+[0m19:31:52.367601 [debug] [ThreadPool]: Using postgres connection "list_airflow_driven_trusted"
+[0m19:31:52.367749 [debug] [ThreadPool]: On list_airflow_driven_trusted: /* {"app": "dbt", "dbt_version": "1.8.0", "profile_name": "default", "target_name": "dev", "connection_name": "list_airflow_driven_trusted"} */
+select
+      'airflow' as database,
+      tablename as name,
+      schemaname as schema,
+      'table' as type
+    from pg_tables
+    where schemaname ilike 'driven_trusted'
+    union all
+    select
+      'airflow' as database,
+      viewname as name,
+      schemaname as schema,
+      'view' as type
+    from pg_views
+    where schemaname ilike 'driven_trusted'
+    union all
+    select
+      'airflow' as database,
+      matviewname as name,
+      schemaname as schema,
+      'materialized_view' as type
+    from pg_matviews
+    where schemaname ilike 'driven_trusted'
+  
+[0m19:31:52.368877 [debug] [ThreadPool]: SQL status: SELECT 0 in 0.001 seconds
+[0m19:31:52.369445 [debug] [ThreadPool]: On list_airflow_driven_trusted: ROLLBACK
+[0m19:31:52.369665 [debug] [ThreadPool]: On list_airflow_driven_trusted: Close
+[0m19:31:52.371906 [debug] [MainThread]: Using postgres connection "master"
+[0m19:31:52.372083 [debug] [MainThread]: On master: BEGIN
+[0m19:31:52.372245 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m19:31:52.373616 [debug] [MainThread]: SQL status: BEGIN in 0.001 seconds
+[0m19:31:52.373804 [debug] [MainThread]: Using postgres connection "master"
+[0m19:31:52.374006 [debug] [MainThread]: On master: /* {"app": "dbt", "dbt_version": "1.8.0", "profile_name": "default", "target_name": "dev", "connection_name": "master"} */
+with relation as (
+        select
+            pg_rewrite.ev_class as class,
+            pg_rewrite.oid as id
+        from pg_rewrite
+    ),
+    class as (
+        select
+            oid as id,
+            relname as name,
+            relnamespace as schema,
+            relkind as kind
+        from pg_class
+    ),
+    dependency as (
+        select distinct
+            pg_depend.objid as id,
+            pg_depend.refobjid as ref
+        from pg_depend
+    ),
+    schema as (
+        select
+            pg_namespace.oid as id,
+            pg_namespace.nspname as name
+        from pg_namespace
+        where nspname != 'information_schema' and nspname not like 'pg\_%'
+    ),
+    referenced as (
+        select
+            relation.id AS id,
+            referenced_class.name ,
+            referenced_class.schema ,
+            referenced_class.kind
+        from relation
+        join class as referenced_class on relation.class=referenced_class.id
+        where referenced_class.kind in ('r', 'v', 'm')
+    ),
+    relationships as (
+        select
+            referenced.name as referenced_name,
+            referenced.schema as referenced_schema_id,
+            dependent_class.name as dependent_name,
+            dependent_class.schema as dependent_schema_id,
+            referenced.kind as kind
+        from referenced
+        join dependency on referenced.id=dependency.id
+        join class as dependent_class on dependency.ref=dependent_class.id
+        where
+            (referenced.name != dependent_class.name or
+             referenced.schema != dependent_class.schema)
+    )
+
+    select
+        referenced_schema.name as referenced_schema,
+        relationships.referenced_name as referenced_name,
+        dependent_schema.name as dependent_schema,
+        relationships.dependent_name as dependent_name
+    from relationships
+    join schema as dependent_schema on relationships.dependent_schema_id=dependent_schema.id
+    join schema as referenced_schema on relationships.referenced_schema_id=referenced_schema.id
+    group by referenced_schema, referenced_name, dependent_schema, dependent_name
+    order by referenced_schema, referenced_name, dependent_schema, dependent_name;
+[0m19:31:52.375322 [debug] [MainThread]: SQL status: SELECT 0 in 0.001 seconds
+[0m19:31:52.375872 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'aed8db41-1d52-4a80-b9fa-90181d8984f8', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffffa9f29a60>]}
+[0m19:31:52.376101 [debug] [MainThread]: On master: ROLLBACK
+[0m19:31:52.376331 [debug] [MainThread]: Using postgres connection "master"
+[0m19:31:52.376494 [debug] [MainThread]: On master: BEGIN
+[0m19:31:52.376752 [debug] [MainThread]: SQL status: BEGIN in 0.000 seconds
+[0m19:31:52.376927 [debug] [MainThread]: On master: COMMIT
+[0m19:31:52.377092 [debug] [MainThread]: Using postgres connection "master"
+[0m19:31:52.377254 [debug] [MainThread]: On master: COMMIT
+[0m19:31:52.377466 [debug] [MainThread]: SQL status: COMMIT in 0.000 seconds
+[0m19:31:52.377617 [debug] [MainThread]: On master: Close
+[0m19:31:52.377843 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m19:31:52.378251 [info ] [MainThread]: 
+[0m19:31:52.382731 [debug] [Thread-1 (]: Began running node model.dbt_driven_data.trusted_non_pii_data
+[0m19:31:52.383003 [info ] [Thread-1 (]: 1 of 4 START sql table model driven_trusted.non_pii_data ....................... [RUN]
+[0m19:31:52.383297 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_airflow_driven_trusted, now model.dbt_driven_data.trusted_non_pii_data)
+[0m19:31:52.383532 [debug] [Thread-1 (]: Began compiling node model.dbt_driven_data.trusted_non_pii_data
+[0m19:31:52.387351 [debug] [Thread-1 (]: Writing injected SQL for node "model.dbt_driven_data.trusted_non_pii_data"
+[0m19:31:52.388031 [debug] [Thread-1 (]: Began executing node model.dbt_driven_data.trusted_non_pii_data
+[0m19:31:52.405915 [debug] [Thread-1 (]: Writing runtime sql for node "model.dbt_driven_data.trusted_non_pii_data"
+[0m19:31:52.407049 [debug] [Thread-1 (]: Using postgres connection "model.dbt_driven_data.trusted_non_pii_data"
+[0m19:31:52.407304 [debug] [Thread-1 (]: On model.dbt_driven_data.trusted_non_pii_data: BEGIN
+[0m19:31:52.407482 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m19:31:52.409680 [debug] [Thread-1 (]: SQL status: BEGIN in 0.002 seconds
+[0m19:31:52.409972 [debug] [Thread-1 (]: Using postgres connection "model.dbt_driven_data.trusted_non_pii_data"
+[0m19:31:52.410197 [debug] [Thread-1 (]: On model.dbt_driven_data.trusted_non_pii_data: /* {"app": "dbt", "dbt_version": "1.8.0", "profile_name": "default", "target_name": "dev", "node_id": "model.dbt_driven_data.trusted_non_pii_data"} */
+
+  
+    
+
+  create  table "airflow"."driven_trusted"."non_pii_data__dbt_tmp"
+  
+  
+    as
+  
+  (
+    
+
+WITH source_data AS (
+    SELECT
+        '***MASKED***' AS person_name,
+        SUBSTRING(dp.user_name, 1, 5) || '*****'  user_name,
+        SUBSTRING(dp.email, 1, 5) || '*****' AS email,
+        '***MASKED***'  AS personal_number, 
+        '***MASKED***' AS birth_date, 
+        '***MASKED***' AS address,
+        '***MASKED***'  AS phone, 
+        SUBSTRING(da.mac_address, 1, 5) || '*****' AS mac_address,
+        SUBSTRING(da.ip_address, 1, 5) || '*****' AS ip_address,
+        SUBSTRING(df.iban, 1, 5) || '*****' AS iban,
+        dd.accessed_at,
+        fnu.session_duration,
+        fnu.download_speed,
+        fnu.upload_speed,
+        fnu.consumed_traffic,
+        fnu.unique_id
+    FROM
+        "airflow"."driven_staging"."fact_network_usage" fnu
+    INNER JOIN
+        "airflow"."driven_staging"."dim_address" da ON fnu.unique_id = da.unique_id
+    INNER JOIN
+        "airflow"."driven_staging"."dim_date" dd ON da.unique_id = dd.unique_id
+    INNER JOIN
+        "airflow"."driven_staging"."dim_finance" df ON dd.unique_id = df.unique_id
+    INNER JOIN
+        "airflow"."driven_staging"."dim_person" dp ON df.unique_id = dp.unique_id
+)
+
+SELECT
+    *
+FROM
+    source_data
+  );
+  
+[0m19:31:57.667320 [debug] [Thread-1 (]: SQL status: SELECT 601718 in 5.257 seconds
+[0m19:31:57.671374 [debug] [Thread-1 (]: Using postgres connection "model.dbt_driven_data.trusted_non_pii_data"
+[0m19:31:57.671645 [debug] [Thread-1 (]: On model.dbt_driven_data.trusted_non_pii_data: /* {"app": "dbt", "dbt_version": "1.8.0", "profile_name": "default", "target_name": "dev", "node_id": "model.dbt_driven_data.trusted_non_pii_data"} */
+alter table "airflow"."driven_trusted"."non_pii_data__dbt_tmp" rename to "non_pii_data"
+[0m19:31:57.672130 [debug] [Thread-1 (]: SQL status: ALTER TABLE in 0.000 seconds
+[0m19:31:57.679916 [debug] [Thread-1 (]: On model.dbt_driven_data.trusted_non_pii_data: COMMIT
+[0m19:31:57.680239 [debug] [Thread-1 (]: Using postgres connection "model.dbt_driven_data.trusted_non_pii_data"
+[0m19:31:57.680502 [debug] [Thread-1 (]: On model.dbt_driven_data.trusted_non_pii_data: COMMIT
+[0m19:31:57.748357 [debug] [Thread-1 (]: SQL status: COMMIT in 0.068 seconds
+[0m19:31:57.751446 [debug] [Thread-1 (]: Applying DROP to: "airflow"."driven_trusted"."non_pii_data__dbt_backup"
+[0m19:31:57.753540 [debug] [Thread-1 (]: Using postgres connection "model.dbt_driven_data.trusted_non_pii_data"
+[0m19:31:57.753733 [debug] [Thread-1 (]: On model.dbt_driven_data.trusted_non_pii_data: /* {"app": "dbt", "dbt_version": "1.8.0", "profile_name": "default", "target_name": "dev", "node_id": "model.dbt_driven_data.trusted_non_pii_data"} */
+drop table if exists "airflow"."driven_trusted"."non_pii_data__dbt_backup" cascade
+[0m19:31:57.754057 [debug] [Thread-1 (]: SQL status: DROP TABLE in 0.000 seconds
+[0m19:31:57.755223 [debug] [Thread-1 (]: On model.dbt_driven_data.trusted_non_pii_data: Close
+[0m19:31:57.755943 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'aed8db41-1d52-4a80-b9fa-90181d8984f8', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffffac746b10>]}
+[0m19:31:57.756350 [info ] [Thread-1 (]: 1 of 4 OK created sql table model driven_trusted.non_pii_data .................. [[32mSELECT 601718[0m in 5.37s]
+[0m19:31:57.757163 [debug] [Thread-1 (]: Finished running node model.dbt_driven_data.trusted_non_pii_data
+[0m19:31:57.757394 [debug] [Thread-1 (]: Began running node model.dbt_driven_data.trusted_payment_data
+[0m19:31:57.757682 [info ] [Thread-1 (]: 2 of 4 START sql table model driven_trusted.payment_data ....................... [RUN]
+[0m19:31:57.757998 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.dbt_driven_data.trusted_non_pii_data, now model.dbt_driven_data.trusted_payment_data)
+[0m19:31:57.758200 [debug] [Thread-1 (]: Began compiling node model.dbt_driven_data.trusted_payment_data
+[0m19:31:57.759945 [debug] [Thread-1 (]: Writing injected SQL for node "model.dbt_driven_data.trusted_payment_data"
+[0m19:31:57.760628 [debug] [Thread-1 (]: Began executing node model.dbt_driven_data.trusted_payment_data
+[0m19:31:57.762221 [debug] [Thread-1 (]: Writing runtime sql for node "model.dbt_driven_data.trusted_payment_data"
+[0m19:31:57.762906 [debug] [Thread-1 (]: Using postgres connection "model.dbt_driven_data.trusted_payment_data"
+[0m19:31:57.763104 [debug] [Thread-1 (]: On model.dbt_driven_data.trusted_payment_data: BEGIN
+[0m19:31:57.763305 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m19:31:57.765263 [debug] [Thread-1 (]: SQL status: BEGIN in 0.002 seconds
+[0m19:31:57.765486 [debug] [Thread-1 (]: Using postgres connection "model.dbt_driven_data.trusted_payment_data"
+[0m19:31:57.765667 [debug] [Thread-1 (]: On model.dbt_driven_data.trusted_payment_data: /* {"app": "dbt", "dbt_version": "1.8.0", "profile_name": "default", "target_name": "dev", "node_id": "model.dbt_driven_data.trusted_payment_data"} */
+
+  
+    
+
+  create  table "airflow"."driven_trusted"."payment_data__dbt_tmp"
+  
+  
+    as
+  
+  (
+    
+
+WITH source_data AS (
+    SELECT
+        fnu.unique_id,
+        df.iban,
+        fnu.download_speed,
+        fnu.upload_speed,
+        fnu.session_duration,
+        fnu.consumed_traffic,
+        ((fnu.download_speed + fnu.upload_speed + 1)/2) + (fnu.consumed_traffic / (fnu.session_duration + 1)) AS payment_amount
+    FROM
+        "airflow"."driven_staging"."fact_network_usage" fnu
+    JOIN
+        "airflow"."driven_staging"."dim_finance" df
+    ON
+	    fnu.unique_id = df.unique_id
+)
+
+SELECT
+    *
+FROM
+    source_data
+  );
+  
+[0m19:31:59.554366 [debug] [Thread-1 (]: SQL status: SELECT 601718 in 1.788 seconds
+[0m19:31:59.556060 [debug] [Thread-1 (]: Using postgres connection "model.dbt_driven_data.trusted_payment_data"
+[0m19:31:59.556330 [debug] [Thread-1 (]: On model.dbt_driven_data.trusted_payment_data: /* {"app": "dbt", "dbt_version": "1.8.0", "profile_name": "default", "target_name": "dev", "node_id": "model.dbt_driven_data.trusted_payment_data"} */
+alter table "airflow"."driven_trusted"."payment_data__dbt_tmp" rename to "payment_data"
+[0m19:31:59.556788 [debug] [Thread-1 (]: SQL status: ALTER TABLE in 0.000 seconds
+[0m19:31:59.557547 [debug] [Thread-1 (]: On model.dbt_driven_data.trusted_payment_data: COMMIT
+[0m19:31:59.557766 [debug] [Thread-1 (]: Using postgres connection "model.dbt_driven_data.trusted_payment_data"
+[0m19:31:59.557994 [debug] [Thread-1 (]: On model.dbt_driven_data.trusted_payment_data: COMMIT
+[0m19:31:59.579344 [debug] [Thread-1 (]: SQL status: COMMIT in 0.021 seconds
+[0m19:31:59.580721 [debug] [Thread-1 (]: Applying DROP to: "airflow"."driven_trusted"."payment_data__dbt_backup"
+[0m19:31:59.581119 [debug] [Thread-1 (]: Using postgres connection "model.dbt_driven_data.trusted_payment_data"
+[0m19:31:59.581326 [debug] [Thread-1 (]: On model.dbt_driven_data.trusted_payment_data: /* {"app": "dbt", "dbt_version": "1.8.0", "profile_name": "default", "target_name": "dev", "node_id": "model.dbt_driven_data.trusted_payment_data"} */
+drop table if exists "airflow"."driven_trusted"."payment_data__dbt_backup" cascade
+[0m19:31:59.581635 [debug] [Thread-1 (]: SQL status: DROP TABLE in 0.000 seconds
+[0m19:31:59.582251 [debug] [Thread-1 (]: On model.dbt_driven_data.trusted_payment_data: Close
+[0m19:31:59.582552 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'aed8db41-1d52-4a80-b9fa-90181d8984f8', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffffa93a4140>]}
+[0m19:31:59.582877 [info ] [Thread-1 (]: 2 of 4 OK created sql table model driven_trusted.payment_data .................. [[32mSELECT 601718[0m in 1.82s]
+[0m19:31:59.583499 [debug] [Thread-1 (]: Finished running node model.dbt_driven_data.trusted_payment_data
+[0m19:31:59.583792 [debug] [Thread-1 (]: Began running node model.dbt_driven_data.trusted_pii_data
+[0m19:31:59.584363 [info ] [Thread-1 (]: 3 of 4 START sql table model driven_trusted.pii_data ........................... [RUN]
+[0m19:31:59.584896 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.dbt_driven_data.trusted_payment_data, now model.dbt_driven_data.trusted_pii_data)
+[0m19:31:59.585123 [debug] [Thread-1 (]: Began compiling node model.dbt_driven_data.trusted_pii_data
+[0m19:31:59.587117 [debug] [Thread-1 (]: Writing injected SQL for node "model.dbt_driven_data.trusted_pii_data"
+[0m19:31:59.587710 [debug] [Thread-1 (]: Began executing node model.dbt_driven_data.trusted_pii_data
+[0m19:31:59.589977 [debug] [Thread-1 (]: Writing runtime sql for node "model.dbt_driven_data.trusted_pii_data"
+[0m19:31:59.590484 [debug] [Thread-1 (]: Using postgres connection "model.dbt_driven_data.trusted_pii_data"
+[0m19:31:59.590671 [debug] [Thread-1 (]: On model.dbt_driven_data.trusted_pii_data: BEGIN
+[0m19:31:59.590901 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m19:31:59.592811 [debug] [Thread-1 (]: SQL status: BEGIN in 0.002 seconds
+[0m19:31:59.593068 [debug] [Thread-1 (]: Using postgres connection "model.dbt_driven_data.trusted_pii_data"
+[0m19:31:59.593280 [debug] [Thread-1 (]: On model.dbt_driven_data.trusted_pii_data: /* {"app": "dbt", "dbt_version": "1.8.0", "profile_name": "default", "target_name": "dev", "node_id": "model.dbt_driven_data.trusted_pii_data"} */
+
+  
+    
+
+  create  table "airflow"."driven_trusted"."pii_data__dbt_tmp"
+  
+  
+    as
+  
+  (
+    
+
+WITH source_data AS (
+    SELECT
+        dp.person_name,
+        dp.user_name,
+        dp.email,
+        dp.personal_number, 
+        dp.birth_date, 
+        da.address,
+        dp.phone, 
+        da.mac_address,
+        da.ip_address,
+        df.iban,
+        dd.accessed_at,
+        fnu.session_duration,
+        fnu.download_speed,
+        fnu.upload_speed,
+        fnu.consumed_traffic,
+        fnu.unique_id
+    FROM
+        "airflow"."driven_staging"."fact_network_usage" fnu
+    INNER JOIN
+        "airflow"."driven_staging"."dim_address" da ON fnu.unique_id = da.unique_id
+    INNER JOIN
+        "airflow"."driven_staging"."dim_date" dd ON da.unique_id = dd.unique_id
+    INNER JOIN
+        "airflow"."driven_staging"."dim_finance" df ON dd.unique_id = df.unique_id
+    INNER JOIN
+        "airflow"."driven_staging"."dim_person" dp ON df.unique_id = dp.unique_id
+)
+
+SELECT
+    *
+FROM
+    source_data
+  );
+  
+[0m19:32:04.959961 [debug] [Thread-1 (]: SQL status: SELECT 601718 in 5.366 seconds
+[0m19:32:04.962574 [debug] [Thread-1 (]: Using postgres connection "model.dbt_driven_data.trusted_pii_data"
+[0m19:32:04.962785 [debug] [Thread-1 (]: On model.dbt_driven_data.trusted_pii_data: /* {"app": "dbt", "dbt_version": "1.8.0", "profile_name": "default", "target_name": "dev", "node_id": "model.dbt_driven_data.trusted_pii_data"} */
+alter table "airflow"."driven_trusted"."pii_data__dbt_tmp" rename to "pii_data"
+[0m19:32:04.963230 [debug] [Thread-1 (]: SQL status: ALTER TABLE in 0.000 seconds
+[0m19:32:04.963938 [debug] [Thread-1 (]: On model.dbt_driven_data.trusted_pii_data: COMMIT
+[0m19:32:04.964109 [debug] [Thread-1 (]: Using postgres connection "model.dbt_driven_data.trusted_pii_data"
+[0m19:32:04.964315 [debug] [Thread-1 (]: On model.dbt_driven_data.trusted_pii_data: COMMIT
+[0m19:32:04.968763 [debug] [Thread-1 (]: SQL status: COMMIT in 0.004 seconds
+[0m19:32:04.970088 [debug] [Thread-1 (]: Applying DROP to: "airflow"."driven_trusted"."pii_data__dbt_backup"
+[0m19:32:04.970494 [debug] [Thread-1 (]: Using postgres connection "model.dbt_driven_data.trusted_pii_data"
+[0m19:32:04.970674 [debug] [Thread-1 (]: On model.dbt_driven_data.trusted_pii_data: /* {"app": "dbt", "dbt_version": "1.8.0", "profile_name": "default", "target_name": "dev", "node_id": "model.dbt_driven_data.trusted_pii_data"} */
+drop table if exists "airflow"."driven_trusted"."pii_data__dbt_backup" cascade
+[0m19:32:04.970972 [debug] [Thread-1 (]: SQL status: DROP TABLE in 0.000 seconds
+[0m19:32:04.971670 [debug] [Thread-1 (]: On model.dbt_driven_data.trusted_pii_data: Close
+[0m19:32:04.972090 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'aed8db41-1d52-4a80-b9fa-90181d8984f8', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffffa9248d70>]}
+[0m19:32:04.972518 [info ] [Thread-1 (]: 3 of 4 OK created sql table model driven_trusted.pii_data ...................... [[32mSELECT 601718[0m in 5.39s]
+[0m19:32:04.973553 [debug] [Thread-1 (]: Finished running node model.dbt_driven_data.trusted_pii_data
+[0m19:32:04.973814 [debug] [Thread-1 (]: Began running node model.dbt_driven_data.trusted_technical_data
+[0m19:32:04.974163 [info ] [Thread-1 (]: 4 of 4 START sql table model driven_trusted.technical_data ..................... [RUN]
+[0m19:32:04.974604 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.dbt_driven_data.trusted_pii_data, now model.dbt_driven_data.trusted_technical_data)
+[0m19:32:04.974814 [debug] [Thread-1 (]: Began compiling node model.dbt_driven_data.trusted_technical_data
+[0m19:32:04.976802 [debug] [Thread-1 (]: Writing injected SQL for node "model.dbt_driven_data.trusted_technical_data"
+[0m19:32:04.977494 [debug] [Thread-1 (]: Began executing node model.dbt_driven_data.trusted_technical_data
+[0m19:32:04.979137 [debug] [Thread-1 (]: Writing runtime sql for node "model.dbt_driven_data.trusted_technical_data"
+[0m19:32:04.979714 [debug] [Thread-1 (]: Using postgres connection "model.dbt_driven_data.trusted_technical_data"
+[0m19:32:04.979889 [debug] [Thread-1 (]: On model.dbt_driven_data.trusted_technical_data: BEGIN
+[0m19:32:04.980054 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m19:32:04.981812 [debug] [Thread-1 (]: SQL status: BEGIN in 0.002 seconds
+[0m19:32:04.981993 [debug] [Thread-1 (]: Using postgres connection "model.dbt_driven_data.trusted_technical_data"
+[0m19:32:04.982162 [debug] [Thread-1 (]: On model.dbt_driven_data.trusted_technical_data: /* {"app": "dbt", "dbt_version": "1.8.0", "profile_name": "default", "target_name": "dev", "node_id": "model.dbt_driven_data.trusted_technical_data"} */
+
+  
+    
+
+  create  table "airflow"."driven_trusted"."technical_data__dbt_tmp"
+  
+  
+    as
+  
+  (
+    
+
+WITH source_data AS (
+    SELECT
+        fnu.unique_id,
+        da.address,
+        da.mac_address,
+        da.ip_address,
+        fnu.download_speed,
+        fnu.upload_speed,
+        ROUND((fnu.session_duration/60), 1) as min_session_duration,
+        CASE 
+            WHEN fnu.download_speed < 50 OR fnu.upload_speed < 30 OR fnu.session_duration/60 < 1 THEN true
+            ELSE false
+        END AS technical_issue
+    FROM
+        "airflow"."driven_staging"."fact_network_usage" fnu
+    JOIN
+        "airflow"."driven_staging"."dim_address" da
+    ON
+	    fnu.unique_id = da.unique_id
+)
+
+SELECT
+    *
+FROM
+    source_data
+  );
+  
+[0m19:32:07.059674 [debug] [Thread-1 (]: SQL status: SELECT 601718 in 2.077 seconds
+[0m19:32:07.062171 [debug] [Thread-1 (]: Using postgres connection "model.dbt_driven_data.trusted_technical_data"
+[0m19:32:07.062402 [debug] [Thread-1 (]: On model.dbt_driven_data.trusted_technical_data: /* {"app": "dbt", "dbt_version": "1.8.0", "profile_name": "default", "target_name": "dev", "node_id": "model.dbt_driven_data.trusted_technical_data"} */
+alter table "airflow"."driven_trusted"."technical_data__dbt_tmp" rename to "technical_data"
+[0m19:32:07.062800 [debug] [Thread-1 (]: SQL status: ALTER TABLE in 0.000 seconds
+[0m19:32:07.063594 [debug] [Thread-1 (]: On model.dbt_driven_data.trusted_technical_data: COMMIT
+[0m19:32:07.063806 [debug] [Thread-1 (]: Using postgres connection "model.dbt_driven_data.trusted_technical_data"
+[0m19:32:07.064028 [debug] [Thread-1 (]: On model.dbt_driven_data.trusted_technical_data: COMMIT
+[0m19:32:07.069399 [debug] [Thread-1 (]: SQL status: COMMIT in 0.005 seconds
+[0m19:32:07.070834 [debug] [Thread-1 (]: Applying DROP to: "airflow"."driven_trusted"."technical_data__dbt_backup"
+[0m19:32:07.071227 [debug] [Thread-1 (]: Using postgres connection "model.dbt_driven_data.trusted_technical_data"
+[0m19:32:07.071411 [debug] [Thread-1 (]: On model.dbt_driven_data.trusted_technical_data: /* {"app": "dbt", "dbt_version": "1.8.0", "profile_name": "default", "target_name": "dev", "node_id": "model.dbt_driven_data.trusted_technical_data"} */
+drop table if exists "airflow"."driven_trusted"."technical_data__dbt_backup" cascade
+[0m19:32:07.071732 [debug] [Thread-1 (]: SQL status: DROP TABLE in 0.000 seconds
+[0m19:32:07.072473 [debug] [Thread-1 (]: On model.dbt_driven_data.trusted_technical_data: Close
+[0m19:32:07.072853 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'aed8db41-1d52-4a80-b9fa-90181d8984f8', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffffa92999a0>]}
+[0m19:32:07.073275 [info ] [Thread-1 (]: 4 of 4 OK created sql table model driven_trusted.technical_data ................ [[32mSELECT 601718[0m in 2.10s]
+[0m19:32:07.073914 [debug] [Thread-1 (]: Finished running node model.dbt_driven_data.trusted_technical_data
+[0m19:32:07.075043 [debug] [MainThread]: Using postgres connection "master"
+[0m19:32:07.075276 [debug] [MainThread]: On master: BEGIN
+[0m19:32:07.075439 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m19:32:07.077149 [debug] [MainThread]: SQL status: BEGIN in 0.002 seconds
+[0m19:32:07.077381 [debug] [MainThread]: On master: COMMIT
+[0m19:32:07.077558 [debug] [MainThread]: Using postgres connection "master"
+[0m19:32:07.077709 [debug] [MainThread]: On master: COMMIT
+[0m19:32:07.077899 [debug] [MainThread]: SQL status: COMMIT in 0.000 seconds
+[0m19:32:07.078050 [debug] [MainThread]: On master: Close
+[0m19:32:07.078287 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m19:32:07.078442 [debug] [MainThread]: Connection 'model.dbt_driven_data.trusted_technical_data' was properly closed.
+[0m19:32:07.078700 [info ] [MainThread]: 
+[0m19:32:07.078903 [info ] [MainThread]: Finished running 4 table models in 0 hours 0 minutes and 14.75 seconds (14.75s).
+[0m19:32:07.079479 [debug] [MainThread]: Command end result
+[0m19:32:07.097846 [info ] [MainThread]: 
+[0m19:32:07.098198 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m19:32:07.098377 [info ] [MainThread]: 
+[0m19:32:07.098632 [info ] [MainThread]: Done. PASS=4 WARN=0 ERROR=0 SKIP=0 TOTAL=4
+[0m19:32:07.099343 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": true, "command_wall_clock_time": 15.005531, "process_user_time": 1.191414, "process_kernel_time": 0.086174, "process_mem_max_rss": "118704", "process_in_blocks": "9008", "process_out_blocks": "1857"}
+[0m19:32:07.099638 [debug] [MainThread]: Command `dbt run` succeeded at 19:32:07.099596 after 15.01 seconds
+[0m19:32:07.099854 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffffaba1dd00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffffabdf73b0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffffa922fb90>]}
+[0m19:32:07.100063 [debug] [MainThread]: Flushing usage events
