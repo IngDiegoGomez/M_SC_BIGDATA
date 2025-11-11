@@ -37,7 +37,7 @@ FROM raw_data
 transformed_data = spark.sql(sql_query)
 
 # Write the transformed DataFrame back to S3.
-transformed_data.write.csv("s3://driven-data-bucket/data/staging/dim_person", header=True, mode="overwrite")
+transformed_data.write.csv("s3://driven-data-bucket-diegoone/data/staging/dim_person", header=True, mode="overwrite")
 
 # Commit the actions.
 job.commit()
